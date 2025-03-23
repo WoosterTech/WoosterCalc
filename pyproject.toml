@@ -1,0 +1,36 @@
+[project]
+name = "woostercalc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "karl.wooster", email = "karl.wooster@wsu.edu" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "pint>=0.24.4",
+    "pydantic>=2.10.6",
+]
+
+[project.scripts]
+woostercalc = "woostercalc:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "commitizen>=4.4.1",
+    "deptry>=0.23.0",
+    "pre-commit>=4.2.0",
+    "ruff>=0.11.2",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "pep621"
+update_changelog_on_bump = true
+major_version_zero = true
