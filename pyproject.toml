@@ -6,7 +6,8 @@ readme = "README.md"
 authors = [
     { name = "karl.wooster", email = "karl.wooster@wsu.edu" }
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.12"
+license = "MIT"
 dependencies = [
     "pint>=0.24.4",
     "pydantic>=2.10.6",
