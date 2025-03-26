@@ -1,0 +1,20 @@
+[project]
+name = "common-libs"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Karl Wooster", email = "karl.wooster@alleima.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "loguru>=0.7.3",
+    "pint>=0.24.4",
+    "pydantic>=2.10.6",
+    "rich>=13.9.4",
+    "scipy>=1.15.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
